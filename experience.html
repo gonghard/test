@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>项目经验</title>
+    <link href="css/comm.css" rel="stylesheet">
+    <link href="css/experience.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/unslider.css">
+    <style type="text/css">
+        ._info_detail_context_4 {
+            background: url("imgs/index_context/4-2.png") no-repeat;
+            background-size: 100%;
+        }
+    </style>
+</head>
+<body>
+<img src="imgs/experience/bj.png" class="img_bg">
+<div class="experience_main">
+    <div class="experience_main_1">
+        <img src="imgs/experience/1-text.png" style="margin-top:420px;margin-left: 86px;" id="experience-text">
+    </div>
+    <div class="experience_main_2">
+        <div style="height: 252px;">
+            <img src="imgs/experience/experience.png" style="margin-top: 100px;">
+        </div>
+        <div style="height: 641px;width: 667px;" class="banner" id="home_banner">
+            <ul>
+                <li data-slide="0"><img alt=""
+                                        src="imgs/experience/1-img.png"></li>
+                <li data-slide="1"><img alt=""
+                                        src="imgs/experience/2-img.png"></li>
+                <li data-slide="2"><img alt=""
+                                        src="imgs/experience/3-img.png"></li>
+                <li data-slide="2"><img alt=""
+                                        src="imgs/experience/5-img.png"></li>
+                <li data-slide="2"><img alt=""
+                                        src="imgs/experience/4-img.png"></li>
+            </ul>
+
+        </div>
+
+    </div>
+</div>
+<div class="_info_detail">
+    <ul>
+        <li class="_info_detail_1">
+            <div class="_info_detail_context_1" relhtml="index.html"></div>
+        </li>
+        <li class="_info_detail_2">
+            <div class="_info_detail_context_2" relhtml="info.html"></div>
+        </li>
+        <li class="_info_detail_3">
+            <div class="_info_detail_context_3" relhtml="work.html"></div>
+        </li>
+        <li class="_info_detail_4">
+            <div class="_info_detail_context_4" relhtml="experience.html"></div>
+        </li>
+        <li class="_info_detail_5">
+            <div class="_info_detail_context_5" relhtml="works.html"></div>
+        </li>
+    </ul>
+</div>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/unslider-min.js"></script>
+<script src="js/app/comm.js"></script>
+<script>
+    $(function () {
+        var slider = $('#home_banner').unslider({
+            nav: false,//是否启动导航图标
+            dots: false,//是否出先圆点点
+            arrows: true,
+            autoplay: false //自动轮播
+        });
+        slider.on('unslider.change', function (event, index, slide) {
+            debugger;
+            var toIndex = index;
+            ++toIndex;
+            if(toIndex==0){
+                toIndex=5;
+            }
+            $('#experience-text').attr('src', 'imgs/experience/' + toIndex + '-text.png');
+        });
+        $('#home_banner').parent().css('overflow', 'hidden');
+        $('.unslider-arrow.next').html("");
+        $('.unslider-arrow.prev').html("");
+    });
+</script>
+</body>
+</html>

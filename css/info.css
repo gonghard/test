@@ -1,0 +1,84 @@
+body {
+    min-height: 640px;
+    width: 100%;
+    position: absolute;
+    min-height: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+._info_detail_context_2 {
+    background: url("../imgs/index_context/2-2.png") no-repeat;
+    background-size: 100%;
+}
+.unslider {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    /*Added*/
+    position: relative;
+}
+
+.unslider-nav{
+    position: absolute;
+    width: 100%;
+    bottom: 2%;
+}
+
+.info_main {
+    width: 1334px;
+    margin: 0 auto;
+    height: 1080px;
+    background-color: #111111;
+}
+
+.info_main_detail_1, .info_main_detail_2 {
+    width: 385px;
+    float: left;
+}
+
+.info_main_detail_1_about_me {
+    margin-top: 100px;
+    width: 385px;
+    height: 100px;
+}
+
+.info_main_detail_1_myPic {
+    width: 385px;
+    height: 700px;
+}
+
+.info_main_detail_3 {
+    width: 564px;
+    float: right;
+}
+.info_main_detail_2{
+    height: 952px;
+    background-color: #222222;
+}
+.info_main_detail_2 .base_info,.info_main_detail_2 .contacts{
+    width: 134px;
+    height: 70px;
+    margin-left: 104px;
+}
+.info_main_detail_2 .base_info {
+    margin-top: 380px;
+    background: url("../imgs/info/base_info_true.png") no-repeat 0;
+    background-size: 100%;
+}
+
+.info_main_detail_2 .base_info.base_info_false{
+    background: url("../imgs/info/base_info_false.png") no-repeat 0;
+    background-size: 100%;
+}
+.info_main_detail_2 .contacts{
+    margin-top: 34px;
+    background: url("../imgs/info/contacts_false.png") no-repeat 0;
+    background-size: 100%;
+}
+
+.info_main_detail_2 .contacts.contacts_true{
+    background: url("../imgs/info/contacts_true.png") no-repeat 0;
+    background-size: 100%;
+}

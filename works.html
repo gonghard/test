@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人作品</title>
+    <link href="css/comm.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/unslider.css">
+    <style type="text/css">
+        ._info_detail_context_5 {
+            background: url("imgs/index_context/5-2.png") no-repeat;
+            background-size: 100%;
+        }
+
+        .img_bg {
+            position: absolute;
+            top: 0;
+            /*left: 50%;*/
+            width: 100%;
+            /*margin-left: -960px;*/
+            height: 100%;
+        }
+
+        .works_main {
+            width: 1334px;
+            position: relative;
+            margin: 0 auto;
+        }
+
+        .unslider-arrow.next, .unslider-arrow.prev {
+            display: block;
+            width: 60px;
+            height: 114px;
+            position: absolute;
+            background: url("imgs/works/button_1.png") no-repeat 0;
+            background-size: 100%;
+            top: 226px;
+            z-index: 500;
+        }
+
+        .unslider-arrow.next {
+            right: 145px;
+            transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+            -moz-transform: rotate(180deg);
+            -webkit-transform: rotate(180deg);
+            -o-transform: rotate(180deg);
+        }
+
+        .unslider-arrow.prev {
+            left: 145px;
+            transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+            -moz-transform: rotate(0deg);
+            -webkit-transform: rotate(0deg);
+            -o-transform: rotate(0deg);
+        }
+
+        .unslider-arrow.prev:hover {
+            background: url("imgs/works/button_2.png") no-repeat 0;
+            background-size: 100%;
+            transform: rotate(-180deg);
+            -ms-transform: rotate(-180deg); /* IE 9 */
+            -moz-transform: rotate(-180deg); /* Firefox */
+            -webkit-transform: rotate(-180deg); /* Safari 和 Chrome */
+            -o-transform: rotate(-180deg); /* Opera */
+        }
+
+        .unslider-arrow.next:hover {
+            background: url("imgs/works/button_2.png") no-repeat 0;
+            background-size: 100%;
+            transform: rotate(0deg);
+            -ms-transform: rotate(0deg); /* IE 9 */
+            -moz-transform: rotate(0deg); /* Firefox */
+            -webkit-transform: rotate(0deg); /* Safari 和 Chrome */
+            -o-transform: rotate(0deg); /* Opera */
+        }
+
+        .right_zhuang {
+            width: 125px;
+            height: 566px;
+            position: absolute;
+            right: 22px;
+        }
+    </style>
+</head>
+<body>
+<img src="imgs/works/bj_img.png" class="img_bg">
+<div class="works_main">
+    <div style="height: 306px;">
+        <img src="imgs/works/1_img.png" style="margin-top: 100px;">
+    </div>
+    <div style="width: 100%;height: 566px;position: relative;">
+        <div style="width: 125px;height: 566px;position: absolute;left: 0;">
+            <img src="imgs/works/2_1.png">
+        </div>
+        <div ><img
+                src="imgs/works/2_1.png" class="right_zhuang"></div>
+        <div style="height: 556px;width: 1084px;margin: 0 auto;" class="banner" id="home_banner">
+            <ul style="width: 1084px;height: 566px;">
+                <li data-slide="0" style="height: 566px;"><img alt=""
+                                                               src="imgs/works/plane_design.png"></li>
+                <li data-slide="1" style="height: 566px;"><img alt=""
+                                                               src="imgs/works/ui_design.png"></li>
+                <li data-slide="2" style="height: 566px;"><img alt=""
+                                                               src="imgs/works/web_design.png"></li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+<div class="_info_detail">
+    <ul>
+        <li class="_info_detail_1">
+            <div class="_info_detail_context_1" relhtml="index.html"></div>
+        </li>
+        <li class="_info_detail_2">
+            <div class="_info_detail_context_2" relhtml="info.html"></div>
+        </li>
+        <li class="_info_detail_3">
+            <div class="_info_detail_context_3" relhtml="work.html"></div>
+        </li>
+        <li class="_info_detail_4">
+            <div class="_info_detail_context_4" relhtml="experience.html"></div>
+        </li>
+        <li class="_info_detail_5">
+            <div class="_info_detail_context_5" relhtml="works.html"></div>
+        </li>
+    </ul>
+</div>
+<script src="js/jquery-3.1.1.min.js"></script>
+
+<script type="text/javascript" src="js/unslider-min.js"></script>
+<script src="js/app/comm.js"></script>
+<script>
+    $(function () {
+        var slider = $('#home_banner').unslider({
+            nav: false,//是否启动导航图标
+            dots: false,//是否出先圆点点
+            arrows: true,
+            autoplay: false //自动轮播
+        });
+        $('#home_banner').parent().css('overflow', 'hidden');
+        //$('#home_banner').parent().css('width','1804px');
+        $('.unslider-arrow.next').html("");
+        $('.unslider-arrow.prev').html("");
+    });
+</script>
+</body>
+</html>

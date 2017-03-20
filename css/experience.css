@@ -1,0 +1,79 @@
+.experience_main {
+    width: 1334px;
+    height: 947px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.experience_main_1, .experience_main_2 {
+    width: 667px;
+    height: 894px;
+    position: relative;
+}
+
+.experience_main_1 {
+    float: left;
+    position: relative;
+    background-color: rgba(17, 17, 17, 0.7);
+}
+
+.experience_main_2 {
+    float: right;
+}
+
+.img_bg {
+    position: absolute;
+    top: 0;
+    /*left: 50%;*/
+    width: 100%;
+    /*margin-left: -960px;*/
+    height: 100%;
+}
+
+.unslider-arrow.next,.unslider-arrow.prev {
+    display: block;
+    width: 40px;
+    height: 74px;
+    position: absolute;
+    top: 536px;
+    background: url("../imgs/experience/jian-yin.png") no-repeat 0;
+    background-size: 100%;
+}
+
+.unslider-arrow.next {
+    left: 24px;
+    transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+
+.unslider-arrow.prev {
+    right: 20px;
+    transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+}
+
+.unslider-arrow.prev:hover {
+    background: url("../imgs/experience/jian-ming.png") no-repeat 0;
+    background-size: 100%;
+    transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg); /* IE 9 */
+    -moz-transform: rotate(-180deg); /* Firefox */
+    -webkit-transform: rotate(-180deg); /* Safari 和 Chrome */
+    -o-transform: rotate(-180deg); /* Opera */
+}
+
+.unslider-arrow.next:hover {
+    background: url("../imgs/experience/jian-ming.png") no-repeat 0;
+    background-size: 100%;
+    transform: rotate(0deg);
+    -ms-transform: rotate(0deg); /* IE 9 */
+    -moz-transform: rotate(0deg); /* Firefox */
+    -webkit-transform: rotate(0deg); /* Safari 和 Chrome */
+    -o-transform: rotate(0deg); /* Opera */
+}

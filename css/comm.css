@@ -1,0 +1,118 @@
+body {
+    min-height: 640px;
+    width: 100%;
+    position: absolute;
+    min-height: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+img {
+    border: 0;
+}
+._info_detail {
+    height: 560px;
+    width: 178px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -280px;
+}
+._info_detail ul {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    right: 40px;
+    width: 178px;
+    list-style: none;
+}
+
+._info_detail ul li div {
+    height: 104px;
+    width: 178px;
+}
+
+._info_detail ul li {
+    height: 104px;
+    width: 178px;
+}
+
+._info_detail_1 {
+    margin-top: 0px;
+    background: url("../imgs/index_bg/1.png") no-repeat;
+    background-size: 100%;
+}
+
+._info_detail_2 {
+    margin-top: 10px;
+    background: url("../imgs/index_bg/2.png") no-repeat;
+    background-size: 100%;
+}
+
+._info_detail_3 {
+    margin-top: 10px;
+    background: url("../imgs/index_bg/3.png") no-repeat;
+    background-size: 100%;
+}
+
+._info_detail_4 {
+    margin-top: 10px;
+    background: url("../imgs/index_bg/4.png") no-repeat;
+    background-size: 100%;
+}
+
+._info_detail_5 {
+    margin-top: 10px;
+    background: url("../imgs/index_bg/5.png") no-repeat;
+    background-size: 100%;
+}
+
+._info_detail_context_1:hover {
+    background: url("../imgs/index_context/1-2.png") no-repeat;
+    background-size: 100%;
+}
+
+._info_detail_context_2:hover {
+    background: url("../imgs/index_context/2-2.png") no-repeat;
+    background-size: 100%;
+}
+
+._info_detail_context_3:hover {
+    background: url("../imgs/index_context/3-2.png") no-repeat;
+    background-size: 100%;
+}
+
+._info_detail_context_4:hover {
+    background: url("../imgs/index_context/4-2.png") no-repeat;
+    background-size: 100%;
+}
+
+._info_detail_context_5:hover {
+    background: url("../imgs/index_context/5-2.png") no-repeat;
+    background-size: 100%;
+}
+
+._info_detail_context_1 {
+    background: url("../imgs/index_context/1.png") no-repeat;
+    background-size: 100%;
+}
+
+._info_detail_context_2 {
+    background: url("../imgs/index_context/2.png") no-repeat;
+    background-size: 100%;
+}
+
+._info_detail_context_3 {
+    background: url("../imgs/index_context/3.png") no-repeat;
+    background-size: 100%;
+}
+
+._info_detail_context_4 {
+    background: url("../imgs/index_context/4.png") no-repeat;
+    background-size: 100%;
+}
+
+._info_detail_context_5 {
+    background: url("../imgs/index_context/5.png") no-repeat;
+    background-size: 100%;
+}

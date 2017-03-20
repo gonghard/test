@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>工作经历</title>
+    <link href="css/comm.css" rel="stylesheet">
+    <link href="css/work.css" rel="stylesheet">
+    <style type="text/css">
+        ._info_detail_context_3 {
+            background: url("imgs/index_context/3-2.png") no-repeat;
+            background-size: 100%;
+        }
+    </style>
+</head>
+<body>
+<img src="imgs/work/bg.png" class="img_bg">
+<div class="work_main">
+    <div class="work_main_1">
+        <div style="height: 252px;background-color: #ea5504;">
+            <img src="imgs/work/myWork.png" style="margin-top: 100px;width: 667px;height: 100px;">
+        </div>
+        <div class="work_main_1_company">
+            <div class="work_main_1_company1_click companyVal"  val="1-val.png" cliCss="1"></div>
+            <div style="height: 30px;text-align: center;">
+                <img src="imgs/work/jian.png" style="width: 36px;height: 20px;margin-top: 4px;">
+            </div>
+            <div class="work_main_1_company2 companyVal" val="2-val.png" cliCss="2"></div>
+            <div style="height: 30px;text-align: center;">
+                <img src="imgs/work/jian.png" style="width: 36px;height: 20px;margin-top: 4px;">
+            </div>
+            <div class="work_main_1_company3 companyVal" val="3-val.png" cliCss="3"></div>
+        </div>
+    </div>
+    <div class="work_main_2">
+        <img src="imgs/work/youxia.png" style="position: absolute;right: 0;bottom: 0;">
+        <img src="imgs/work/youzhong.png" style="position: absolute;left: 0;top: 50%;width: 40px;height: 60px;margin-top: -30px;">
+        <img src="imgs/work/1-val.png" style="margin-top: 384px;margin-left: 140px;" id="company_val_id">
+    </div>
+</div>
+<div class="_info_detail">
+    <ul>
+        <li class="_info_detail_1">
+            <div class="_info_detail_context_1" relhtml="index.html"></div>
+        </li>
+        <li class="_info_detail_2">
+            <div class="_info_detail_context_2" relhtml="info.html"></div>
+        </li>
+        <li class="_info_detail_3">
+            <div class="_info_detail_context_3" relhtml="work.html"></div>
+        </li>
+        <li class="_info_detail_4">
+            <div class="_info_detail_context_4" relhtml="experience.html"></div>
+        </li>
+        <li class="_info_detail_5">
+            <div class="_info_detail_context_5" relhtml="works.html"></div>
+        </li>
+    </ul>
+</div>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/app/comm.js"></script>
+<script>
+    $(function () {
+        $('.work_main_1_company .companyVal').click(function () {
+            debugger;
+            $('#company_val_id').attr('src', 'imgs/work/' + $(this).attr('val'));
+            for (var i = 1; i <= $('.work_main_1_company .companyVal').length; i++) {
+                var css_val = 'work_main_1_company' + i;
+                $('.work_main_1_company div[cliCss=' + i + ']').removeClass(css_val + '_click');
+                $('.work_main_1_company div[cliCss=' + i + ']').toggleClass(css_val, true);
+            }
+            var css_val = parseInt($(this).attr('cliCss'));
+            $(this).removeClass(('work_main_1_company' + css_val));
+            $(this).addClass(('work_main_1_company' + css_val + '_click'));
+        });
+    });
+</script>
+</body>
+</html>

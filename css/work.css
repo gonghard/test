@@ -1,0 +1,87 @@
+.work_main {
+    width: 1334px;
+    height: 947px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.img_bg {
+    position: absolute;
+    top: 0;
+    /*left: 50%;*/
+    width: 100%;
+    /*margin-left: -960px;*/
+    height: 100%;
+}
+
+.work_main_1, .work_main_2 {
+    width: 667px;
+    height: 947px;
+}
+
+.work_main_1 {
+    float: left;
+}
+
+.work_main_2 {
+    float: right;
+    background-color: rgba(17, 17, 17, 0.7);
+    position: relative;
+}
+
+.work_main_1_company {
+    height: 695px;
+    background-color: rgba(34, 34, 34, 0.7);
+    padding-top: 154px;
+}
+
+.work_main_1_company div {
+    width: 378px;
+    height: 108px;
+    margin: 0 auto;
+}
+
+.work_main_1_company1 {
+    background: url("../imgs/work/1.png") no-repeat 0;
+    background-size: 100%;
+}
+
+.work_main_1_company1:hover {
+    background: url("../imgs/work/1-2.png") no-repeat 0;
+    background-size: 100%;
+}
+
+.work_main_1_company1_click {
+    background: url("../imgs/work/1-2.png") no-repeat 0;
+    background-size: 100%;
+}
+
+.work_main_1_company2 {
+    background: url("../imgs/work/2.png") no-repeat 0;
+    background-size: 100%;
+}
+
+.work_main_1_company2_click {
+    background: url("../imgs/work/2-2.png") no-repeat 0;
+    background-size: 100%;
+}
+
+.work_main_1_company2:hover {
+    background: url("../imgs/work/2-2.png") no-repeat 0;
+    background-size: 100%;
+}
+
+.work_main_1_company3 {
+    background: url("../imgs/work/3.png") no-repeat 0;
+    background-size: 100%;
+}
+
+.work_main_1_company3_click {
+    background: url("../imgs/work/3-2.png") no-repeat 0;
+    background-size: 100%;
+}
+
+.work_main_1_company3:hover {
+    background: url("../imgs/work/3-2.png") no-repeat 0;
+    background-size: 100%;
+}
